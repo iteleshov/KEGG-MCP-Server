@@ -41,6 +41,46 @@ This MCP server enables seamless integration with KEGG's extensive biological da
 - `search_compounds`: Search compounds by name, formula, or structure
 - `get_compound_info`: Get detailed compound information
 
+#### Reaction & Enzyme Analysis (4 tools)
+
+- `search_reactions`: Search biochemical reactions by keywords
+- `get_reaction_info`: Get detailed reaction information
+- `search_enzymes`: Search enzymes by EC number or name
+- `get_enzyme_info`: Get detailed enzyme information
+
+#### Disease & Drug Analysis (5 tools)
+
+- `search_diseases`: Search human diseases by name or keywords
+- `get_disease_info`: Get detailed disease information
+- `search_drugs`: Search drugs by name, target, or indication
+- `get_drug_info`: Get detailed drug information
+- `get_drug_interactions`: Find adverse drug-drug interactions
+
+#### Module & Orthology Analysis (4 tools)
+
+- `search_modules`: Search KEGG modules by name or function
+- `get_module_info`: Get detailed module information
+- `search_ko_entries`: Search KEGG Orthology entries
+- `get_ko_info`: Get detailed KO information
+
+#### Glycan Analysis (2 tools)
+
+- `search_glycans`: Search glycan structures by name or composition
+- `get_glycan_info`: Get detailed glycan information
+
+#### BRITE Hierarchy Analysis (2 tools)
+
+- `search_brite`: Search BRITE functional hierarchies
+- `get_brite_info`: Get detailed BRITE entry information
+
+#### Advanced Analysis Tools (4 tools)
+
+- `get_pathway_compounds`: Get all compounds in a pathway
+- `get_pathway_reactions`: Get all reactions in a pathway
+- `get_compound_reactions`: Get all reactions involving a compound
+- `get_gene_orthologs`: Find orthologous genes across organisms
+- `batch_entry_lookup`: Process multiple KEGG entries efficiently
+
 #### Cross-References & Integration (2 tools)
 
 - `convert_identifiers`: Convert between KEGG and external database IDs
@@ -219,9 +259,11 @@ For issues related to:
 ## Version History
 
 - **v1.0.0**: Initial release with comprehensive KEGG API coverage
-  - 11 tools covering all major KEGG databases
+  - 30 tools covering all major KEGG databases
   - 8 resource templates for dynamic data access
-  - Full support for pathways, genes, compounds, and cross-references
+  - Full support for pathways, genes, compounds, reactions, enzymes, diseases, drugs, modules, glycans, and BRITE hierarchies
+  - Advanced analysis tools for cross-database integration
+  - Batch processing capabilities
   - Robust error handling and input validation
 
 ## Acknowledgments
