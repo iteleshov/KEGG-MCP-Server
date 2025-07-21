@@ -1,3 +1,5 @@
+![Logo](logo.png)
+
 # Unofficial KEGG MCP Server
 
 A Model Context Protocol (MCP) server that provides comprehensive access to the KEGG (Kyoto Encyclopedia of Genes and Genomes) database through its REST API.
