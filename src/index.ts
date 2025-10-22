@@ -2118,3 +2118,4 @@ class KEGGServer {
 
 const server = new KEGGServer();
 server.run().catch(console.error);
+process.stdin.resume();
