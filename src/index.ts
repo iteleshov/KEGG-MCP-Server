@@ -2113,9 +2113,13 @@ class KEGGServer {
     const transport = new StdioServerTransport();
     await this.server.connect(transport);
     console.error('KEGG MCP server running on stdio');
+    this.keepAlive();
+  }
+
+  private keepAlive() {
+    setInterval(() => {}, 1000);
   }
 }
 
 const server = new KEGGServer();
 server.run().catch(console.error);
-process.stdin.resume();
